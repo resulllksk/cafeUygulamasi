@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EEFC94D-05B7-44B2-A891-63EEB7E5FC2D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>cafeUygulamasi</RootNamespace>
+    <AssemblyName>cafeUygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7C0648EA3A314372E04353B5EB695D95377646C1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>cafeUygulamasi_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Yeni klasör\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Model\frmKategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmKategoriEkle.Designer.cs">
+      <DependentUpon>frmKategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmPersonelEkle.Designer.cs">
+      <DependentUpon>frmPersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmPos.Designer.cs">
+      <DependentUpon>frmPos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmTableAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmTableAdd.Designer.cs">
+      <DependentUpon>frmTableAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmTableSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmTableSelect.Designer.cs">
+      <DependentUpon>frmTableSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmUrunEkle.Designer.cs">
+      <DependentUpon>frmUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmWaiterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmWaiterSelect.Designer.cs">
+      <DependentUpon>frmWaiterSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\usUrun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\usUrun.Designer.cs">
+      <DependentUpon>usUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleAdd.Designer.cs">
+      <DependentUpon>SampleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleView.Designer.cs">
+      <DependentUpon>SampleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmKategorilerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmKategorilerView.Designer.cs">
+      <DependentUpon>frmKategorilerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPersonel.Designer.cs">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmTableVİew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmTableVİew.Designer.cs">
+      <DependentUpon>frmTableVİew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmUrunlerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmUrunlerView.Designer.cs">
+      <DependentUpon>frmUrunlerView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmKategoriEkle.resx">
+      <DependentUpon>frmKategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmPersonelEkle.resx">
+      <DependentUpon>frmPersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmPos.resx">
+      <DependentUpon>frmPos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmTableAdd.resx">
+      <DependentUpon>frmTableAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmTableSelect.resx">
+      <DependentUpon>frmTableSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmUrunEkle.resx">
+      <DependentUpon>frmUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmWaiterSelect.resx">
+      <DependentUpon>frmWaiterSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\usUrun.resx">
+      <DependentUpon>usUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SampleAdd.resx">
+      <DependentUpon>SampleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleView.resx">
+      <DependentUpon>SampleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmKategorilerView.resx">
+      <DependentUpon>frmKategorilerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPersonel.resx">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTableVİew.resx">
+      <DependentUpon>frmTableVİew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmUrunlerView.resx">
+      <DependentUpon>frmUrunlerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="cafeUygulamasi_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasikCatal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-medium-priority-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pos-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-kitchen-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cutlery-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-medium-priority-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pen-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trash-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pen-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pen-502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-table-482.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-staff-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-product-5222222222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasikCatal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cutlery-801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-off-91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-tag-woman-80.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,1 @@
+﻿select pID,pName,pPrice,CategoryID,c.catName from urunler p inner join category c on c.catID = p.CategoryID
